@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/pattern1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="42dp"
+        android:text="Class1"
+        app:layout_constraintBottom_toTopOf="@+id/pattern2"
+        app:layout_constraintEnd_toStartOf="@+id/speed1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pattern2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="47dp"
+        android:text="Class2"
+        app:layout_constraintBottom_toTopOf="@+id/pattern3"
+        app:layout_constraintEnd_toStartOf="@+id/speed2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pattern1" />
+
+    <Button
+        android:id="@+id/pattern3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="31dp"
+        android:text="Class3"
+        app:layout_constraintBottom_toTopOf="@+id/IdBufferIn"
+        app:layout_constraintEnd_toStartOf="@+id/speed3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pattern2" />
+
+    <Button
+        android:id="@+id/speed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="43dp"
+        android:text="Speed1"
+        app:layout_constraintBottom_toTopOf="@+id/speed2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pattern1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/speed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="46dp"
+        android:text="Speed2"
+        app:layout_constraintBottom_toTopOf="@+id/speed3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pattern2"
+        app:layout_constraintTop_toBottomOf="@+id/speed1" />
+
+    <Button
+        android:id="@+id/speed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="31dp"
+        android:text="Speed3"
+        app:layout_constraintBottom_toTopOf="@+id/IdBufferIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pattern3"
+        app:layout_constraintTop_toBottomOf="@+id/speed2" />
+
+    <TextView
+        android:id="@+id/IdBufferIn"
+        android:layout_width="245dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="100dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="102dp"
+        android:text="          LED Game"
+        android:textColorLink="#00FE04"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
